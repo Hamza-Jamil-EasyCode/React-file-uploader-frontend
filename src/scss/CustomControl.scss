@@ -1,0 +1,35 @@
+.custom-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  // top: 8rem;
+  bottom: 22rem;
+  right: 1rem;
+
+  button {
+    border-radius: 50% !important;
+    background: none;
+    border: none;
+
+    i {
+      color: black;
+      font-size: 1.5rem;
+      transition: 200ms ease-in-out;
+    }
+
+    .disable {
+      color: $seventhColor;
+    }
+  }
+
+
+  button + button {
+    right: 0;
+  }
+
+  & > :first-child{
+    left: 1rem;
+  }
+}

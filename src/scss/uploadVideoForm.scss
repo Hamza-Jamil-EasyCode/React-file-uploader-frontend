@@ -1,0 +1,69 @@
+.upload {
+  height: 100vh;
+  background-color: $tertiaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &_video {
+    width: 300px;
+    height: 100px;
+    border: 2px dashed $primaryColor;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms ease-in-out;
+
+    .title {
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 200ms ease-in-out;
+      z-index: 1;
+      color: $primaryColor;
+
+      &:hover {
+        color: white;
+        letter-spacing: 0.2rem;
+      }
+    }
+
+    input {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      width: 300px;
+      height: 100px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: 1px solid red;
+      opacity: 0;
+    }
+
+    &:hover {
+      border-color: white;
+    }
+  }
+
+  .link {
+    all: unset;
+
+    @include primaryBtn;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: white;
+    }
+  }
+
+  span{
+    margin: 2rem 0 0;
+    font-size: 0.6rem;
+  }
+}

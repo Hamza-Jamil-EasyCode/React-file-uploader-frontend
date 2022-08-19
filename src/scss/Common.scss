@@ -1,0 +1,24 @@
+@import "./fonts/fonts.scss";
+
+h1 {
+  font-size: 1.5rem;
+  font-family: secondaryFont;
+  color: white;
+  font-weight: 600;
+}
+
+@mixin primaryBtn {
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  transition: 200ms ease-in-out;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-family: secondaryFont;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+@mixin inputFields {}
